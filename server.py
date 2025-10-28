@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Configure Gemini API key
-genai.configure(api_key="AIzaSyANXqIyIyOsuzJ3G59NMIYtoRZiooZyyUQ")
+genai.configure(api_key="API_KEY")
 
 @app.route('/search')
 def search():
@@ -55,3 +55,4 @@ def search():
 
 if __name__ == '__main__':
     app.run(port=3000, debug=True)
+
